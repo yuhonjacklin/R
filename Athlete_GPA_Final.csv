@@ -1,0 +1,186 @@
+Athletic_Ability,GPA,School,Major,Hours_Spent_On_Homework_Per_Week,Commuter_Status
+0.46,0.76,Michigan,Humanities,3.85,Commuter
+7.53,0.57,NYU,Humanities,2.02,Commuter
+0.25,0,Michigan,Humanities,0.06,Non_Commuter
+5.99,4,Cal Tech,Humanities,18.17,Non_Commuter
+5.07,4,Cal Tech,Humanities,19.36,Commuter
+4.28,1.83,NYU,Humanities,7,Commuter
+6.56,1.28,NYU,Humanities,6.48,Commuter
+9.82,4,Harvard,Humanities,17.1,Non_Commuter
+8.46,4,Harvard,Humanities,17.31,Non_Commuter
+8.4,3.52,Cal Tech,Humanities,16.07,Commuter
+8.4,3,Cal Tech,Humanities,13.97,Non_Commuter
+2.16,4,Berkley,Humanities,17.93,Non_Commuter
+1.42,0,Michigan,Humanities,0.87,Commuter
+5.61,0.19,Rutgers,Humanities,1.28,Commuter
+1.12,1.41,Penn State,Humanities,7.62,Non_Commuter
+2.29,0,Michigan,Humanities,0,Non_Commuter
+5.99,2.8,Vassar,Humanities,12.28,Commuter
+5.61,2.34,Berkley,Humanities,9.89,Non_Commuter
+2.15,0,Michigan,Humanities,1,Non_Commuter
+3.14,3.46,Berkley,Humanities,15.18,Commuter
+9.12,2.83,Cal Tech,Humanities,13.4,Non_Commuter
+4.23,3.63,Vassar,Humanities,15.41,Non_Commuter
+6.49,4,Cal Tech,Humanities,18.48,Non_Commuter
+6.83,3.11,Vassar,Humanities,14.69,Non_Commuter
+6.61,1.22,NYU,Humanities,5.51,Commuter
+5.75,4,Cal Tech,Humanities,17.99,Non_Commuter
+7.16,3.61,Cal Tech,Humanities,15.6,Non_Commuter
+2.19,0.98,Penn State,Humanities,4.04,Commuter
+3.61,1.71,NYU,Humanities,6.41,Commuter
+0,0,Michigan,Humanities,0,Non_Commuter
+0.71,0,Michigan,Humanities,0,Non_Commuter
+3.98,0,Penn State,Humanities,0,Non_Commuter
+7,2.33,Vassar,Humanities,9.47,Commuter
+8.26,3.73,Harvard,Humanities,15.77,Non_Commuter
+7,0,Rutgers,Humanities,0.02,Non_Commuter
+4.2,2.36,Berkley,Humanities,10.41,Commuter
+8.13,4,Harvard,Humanities,18.48,Commuter
+3.56,0.07,Penn State,Humanities,0,Commuter
+7.13,3.25,Cal Tech,Humanities,15.29,Commuter
+0.6,0,Michigan,Humanities,0,Non_Commuter
+6.26,0.74,NYU,Social Sciences,2.87,Commuter
+7.65,1.19,Berkley,Social Sciences,5.34,Non_Commuter
+3.73,0.79,Rutgers,Social Sciences,3.94,Non_Commuter
+5.35,3.13,Vassar,Social Sciences,13.25,Non_Commuter
+3.43,0,Penn State,Social Sciences,0.26,Commuter
+7.92,2.53,Vassar,Social Sciences,10.85,Non_Commuter
+10,4,Harvard,Social Sciences,18.44,Non_Commuter
+5.5,2.95,Vassar,Social Sciences,12.56,Non_Commuter
+6.46,4,Cal Tech,Social Sciences,18.57,Commuter
+10,3.43,Harvard,Social Sciences,15.57,Non_Commuter
+8.3,4,Harvard,Social Sciences,18.13,Non_Commuter
+2.88,1.01,Rutgers,Social Sciences,3.88,Commuter
+0.95,0,Michigan,Social Sciences,0,Non_Commuter
+2.62,1.21,Rutgers,Social Sciences,5.82,Commuter
+0,0.56,Michigan,Social Sciences,0.78,Non_Commuter
+1.72,0,Michigan,Social Sciences,0.18,Non_Commuter
+8.99,4,Harvard,Social Sciences,18.81,Non_Commuter
+0,0.83,Michigan,Social Sciences,4.22,Non_Commuter
+4.37,0.66,Rutgers,Social Sciences,3.77,Non_Commuter
+0.03,0,Michigan,Social Sciences,0.41,Non_Commuter
+3.19,4,Vassar,Social Sciences,18.27,Commuter
+1.83,4,Berkley,Social Sciences,19.08,Non_Commuter
+10,4,Harvard,Social Sciences,17.48,Non_Commuter
+0,0,Michigan,Social Sciences,0,Commuter
+0.66,1.56,Penn State,Social Sciences,7.22,Commuter
+0,1.66,Penn State,Social Sciences,8.96,Non_Commuter
+10,2.77,Cal Tech,Social Sciences,12.16,Non_Commuter
+4.02,0,Penn State,Social Sciences,0,Non_Commuter
+2.42,0.87,Penn State,Social Sciences,4.98,Non_Commuter
+2.62,0.41,Penn State,Social Sciences,1.78,Non_Commuter
+1.87,0,Michigan,Natural Sciences,0,Commuter
+1.2,0.25,Michigan,Natural Sciences,2.09,Non_Commuter
+4.16,1.32,Rutgers,Natural Sciences,4.65,Commuter
+8.22,3.34,Cal Tech,Natural Sciences,16.26,Non_Commuter
+10,4,Harvard,Natural Sciences,18.28,Non_Commuter
+5.01,0.63,Rutgers,Natural Sciences,2.47,Commuter
+5.2,1.34,NYU,Natural Sciences,6.78,Commuter
+5.6,0.81,NYU,Natural Sciences,2.57,Non_Commuter
+1.41,0.1,Michigan,Natural Sciences,1.22,Non_Commuter
+4.84,2.1,Berkley,Natural Sciences,9.69,Commuter
+5.31,1.4,NYU,Natural Sciences,6.28,Commuter
+10,4,Harvard,Natural Sciences,17.99,Commuter
+0.68,0.92,Penn State,Natural Sciences,3.53,Commuter
+10,2.05,Cal Tech,Natural Sciences,9.72,Commuter
+8.91,1.63,Vassar,Natural Sciences,7.58,Commuter
+7.32,1.99,Berkley,Natural Sciences,8.81,Non_Commuter
+4.87,3.41,Vassar,Natural Sciences,15.11,Commuter
+4.96,2.21,Berkley,Natural Sciences,8.98,Commuter
+8.9,4,Harvard,Natural Sciences,18.04,Non_Commuter
+5.58,2.02,Berkley,Natural Sciences,10.12,Non_Commuter
+2.79,4,Vassar,Mathematics,17.91,Non_Commuter
+4.36,0,Penn State,Mathematics,0,Commuter
+8.81,1.32,Berkley,Mathematics,6.27,Commuter
+6.99,0,Rutgers,Mathematics,0,Commuter
+2.2,0,Michigan,Mathematics,0,Commuter
+10,4,Harvard,Mathematics,18.62,Commuter
+4.29,0.1,Penn State,Mathematics,0.62,Non_Commuter
+10,1.01,Vassar,Mathematics,4.9,Commuter
+6.86,2.56,Vassar,Mathematics,12.36,Non_Commuter
+3.35,1.17,Rutgers,Mathematics,5.41,Non_Commuter
+3.84,4,Vassar,Mathematics,18.32,Non_Commuter
+0,2.21,Rutgers,Mathematics,9.76,Commuter
+0.24,0.25,Michigan,Mathematics,0.43,Non_Commuter
+1.59,0.95,Penn State,Mathematics,4.35,Non_Commuter
+5.31,4,Cal Tech,Mathematics,17.1,Commuter
+3.6,3.74,Vassar,Mathematics,16.15,Commuter
+2.52,1.37,Rutgers,Mathematics,6,Commuter
+7.78,4,Harvard,Mathematics,16.46,Non_Commuter
+3.88,0,Penn State,Mathematics,0,Non_Commuter
+2.65,0,Penn State,Mathematics,0.16,Commuter
+3.1,2.64,NYU,Mathematics,10.84,Commuter
+4.92,0,Penn State,Mathematics,0.82,Non_Commuter
+5.68,0,Rutgers,Mathematics,0.3,Commuter
+4.22,0.48,Rutgers,Mathematics,2.14,Non_Commuter
+9.65,4,Harvard,Mathematics,17.41,Non_Commuter
+4.1,0,Penn State,Mathematics,0.11,Commuter
+5.01,0,Rutgers,Mathematics,0.14,Commuter
+4.04,0,Penn State,Mathematics,0,Commuter
+0,4,Berkley,Mathematics,17.6,Non_Commuter
+4.36,0,Penn State,Mathematics,0.71,Commuter
+0,0.17,Michigan,Mathematics,0.63,Commuter
+4.6,0,Penn State,Mathematics,0,Non_Commuter
+7.55,0.63,NYU,Mathematics,3.21,Non_Commuter
+10,4,Harvard,Mathematics,18.07,Non_Commuter
+1.38,0.12,Michigan,Mathematics,0,Commuter
+1.36,2.31,Rutgers,Mathematics,10.97,Non_Commuter
+0,0,Michigan,Mathematics,0,Commuter
+8.51,0.9,Berkley,Mathematics,3.62,Commuter
+5.38,0.23,Rutgers,Mathematics,0.97,Non_Commuter
+7.22,0,Rutgers,Mathematics,0,Commuter
+0,3.91,NYU,Mathematics,17.27,Commuter
+0,3.92,NYU,Mathematics,17.34,Commuter
+1.56,1.22,Penn State,Mathematics,6.41,Non_Commuter
+10,4,Harvard,Mathematics,17.2,Non_Commuter
+10,1.35,Vassar,Mathematics,6.51,Non_Commuter
+6.74,4,Cal Tech,Other,18.44,Non_Commuter
+0.06,4,Berkley,Other,17.07,Commuter
+5.97,4,Cal Tech,Other,17.14,Non_Commuter
+7.85,4,Harvard,Other,17.65,Commuter
+7.07,4,Cal Tech,Other,18.47,Commuter
+8.67,4,Harvard,Other,18.5,Non_Commuter
+6.74,0,Rutgers,Other,0,Non_Commuter
+6.18,0,Rutgers,Other,0,Non_Commuter
+2.74,0,Penn State,Other,0,Non_Commuter
+7.79,4,Harvard,Other,18.4,Commuter
+6.67,4,Cal Tech,Other,16.41,Non_Commuter
+6.35,4,Cal Tech,Other,18.25,Commuter
+3.8,0,Penn State,Other,0,Non_Commuter
+6.78,1.66,Berkley,Other,7.32,Non_Commuter
+4.06,1.51,NYU,Other,6.12,Non_Commuter
+8.97,4,Harvard,Other,17.93,Non_Commuter
+6.01,0,Rutgers,Other,0,Commuter
+9.09,4,Harvard,Other,17.45,Commuter
+9.21,4,Harvard,Other,18.45,Commuter
+6.63,1.76,Berkley,Other,7.87,Commuter
+5.3,4,Cal Tech,Other,18.66,Non_Commuter
+2.67,1.8,Rutgers,Other,8.4,Non_Commuter
+2.9,0,Penn State,Other,0,Commuter
+1.49,0,Michigan,Other,0,Non_Commuter
+7.73,0.55,NYU,Other,3.77,Non_Commuter
+3.77,0.7,Rutgers,Other,2.46,Non_Commuter
+6.6,0.36,Rutgers,Other,0.88,Non_Commuter
+0.42,0.86,Penn State,Other,4.13,Non_Commuter
+8.23,4,Harvard,Other,17.8,Non_Commuter
+2.03,1.23,Rutgers,Other,5.09,Non_Commuter
+10,2.99,Cal Tech,Other,13.52,Non_Commuter
+9.45,0,NYU,Other,0.5,Non_Commuter
+6.1,0,Rutgers,Other,0,Commuter
+6.75,4,Cal Tech,Other,18.56,Commuter
+8.87,0,NYU,Other,0.73,Non_Commuter
+0,0,Michigan,Other,0,Non_Commuter
+1.03,1.75,Rutgers,Other,7.21,Non_Commuter
+3.59,2.96,Berkley,Other,13.02,Non_Commuter
+10,4,Harvard,Other,18.01,Commuter
+4.37,4,Vassar,Other,16.6,Non_Commuter
+7.15,2.62,Vassar,Other,9.82,Commuter
+6.34,4,Cal Tech,Other,16.71,Commuter
+6.48,0,Rutgers,Other,0.45,Non_Commuter
+1.35,0,Michigan,Other,1.18,Commuter
+0,0,Michigan,Other,0.5,Commuter
+6.75,2.54,Vassar,Other,10.64,Commuter
+2.96,2.43,NYU,Other,10.83,Commuter
+8.51,0,NYU,Other,0,Non_Commuter
+10,4,Harvard,Other,18.42,Non_Commuter
+10,4,Harvard,Other,19.73,Non_Commuter
