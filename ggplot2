@@ -1,0 +1,184 @@
+install.packages("tidyverse")
+install.packages("ggplot2")
+install.packages("ggplot2")
+install.packages("ggridges")
+install.packages("ggvis")
+install.packages("ggthemes")
+install.packages("gganimate")
+install.packages("gapminder")
+install.packages("cowplot")
+install.packages("hexbin")
+install.packages("gridExtra")
+install.packages("RColorBrewer")
+install.packages("gifski")
+install.packages("png")
+install.packages("lattice")
+library(lattice)
+library(ggplot2)
+library(ggridges)
+library(ggvis)
+library(ggthemes)
+library(cowplot)
+library(gapminder)
+library(gganimate)
+library(dplyr)
+library(tidyverse)
+library(grid)
+library(gridExtra)
+library(RColorBrewer)
+data(anscombe)
+cor1 <- format(cor(anscombe$x1, anscombe$y1), digits=4)
+cor2 <- format(cor(anscombe$x2, anscombe$y2), digits=4)
+cor3 <- format(cor(anscombe$x3, anscombe$y3), digits=4)
+cor4 <- format(cor(anscombe$x4, anscombe$y4), digits=4)
+line1 <- lm(y1 ~ x1, data=anscombe)
+line2 <- lm(y2 ~ x2, data=anscombe)
+line3 <- lm(y3 ~ x3, data=anscombe)
+line4 <- lm(y4 ~ x4, data=anscombe)
+circle.size = 5
+colors = list('red', '#0066CC', '#4BB14B', '#FCE638')
+plot1 <- ggplot(anscombe, aes(x=x1, y=y1)) + geom_point(size=circle.size, pch=21, fill=colors[[1]]) +
+geom_abline(intercept=line1$coefficients[1], slope=line1$coefficients[2]) +
+annotate("text", x = 12, y = 5, label = paste("correlation = ", cor1))
+plot2 <- ggplot(anscombe, aes(x=x2, y=y2)) + geom_point(size=circle.size, pch=21, fill=colors[[2]]) +
+geom_abline(intercept=line2$coefficients[1], slope=line2$coefficients[2]) +
+annotate("text", x = 12, y = 3, label = paste("correlation = ", cor2))
+plot3 <- ggplot(anscombe, aes(x=x3, y=y3)) + geom_point(size=circle.size, pch=21, fill=colors[[3]]) +
+geom_abline(intercept=line3$coefficients[1], slope=line3$coefficients[2]) +
+annotate("text", x = 12, y = 6, label = paste("correlation = ", cor3))
+plot4 <- ggplot(anscombe, aes(x=x4, y=y4)) + geom_point(size=circle.size, pch=21, fill=colors[[4]]) +
+geom_abline(intercept=line4$coefficients[1], slope=line4$coefficients[2]) +
+annotate("text", x = 15, y = 6, label = paste("correlation = ", cor4))
+grid.arrange(plot1, plot2, plot3, plot4, top='Anscombe Quadrant -- Correlation Demostration')
+data(diamonds)
+?diamonds
+attach(diamonds)
+plot(price~carat)
+plot(price~carat)
+abline(lm(price~carat), col="red")
+plot(price~carat, col="steelblue", pch=3, main="Diamond Data", xlab="weight of diamond in carats",
+ylab="price of diamond in dollars", xlim=c(0,3))
+xyplot(price~carat)
+xyplot(price~carat | cut)
+xyplot(price~carat, groups=cut)
+xyplot(price~carat | cut + clarity)
+xyplot(price~carat | cut , groups=clarity, auto.key=list(space="right"))
+xyplot(price~carat, col="steelblue", pch=3, main="Diamond Data", xlab="weight of diamond in carats",
+ylab="price of diamond in dollars", xlim=c(0,3), scales=list(tick.number=10))
+ggplot(diamonds, aes(x=carat,y=price)) + geom_point()
+ggplot(diamonds, aes(x=carat,y=price)) + facet_wrap(clarity) + geom_point()
+ggplot(diamonds, aes(x=carat, y=price)) + geom_point(aes(color=cut))
+ggplot(diamonds, aes(x=carat,y=price)) + xlim(0,3) + geom_point(colour="steelblue", pch=3) +
+labs(x="weight of diamond in carats", y="price of diamond in dollars", title="Diamond Data")
+ggplot(diamonds, aes(cut)) + geom_bar(position="stack")
+ggplot(diamonds, aes(clarity) )+ geom_bar(position="stack")
+ggplot(diamonds, aes(clarity)) + facet_grid(.~cut) + geom_bar(position="dodge")
+mygraph <- ggplot(diamonds, aes(x=carat,y=price)) + xlim(0,3) + geom_point(colour="steelblue", pch=3) +
+labs(x="weight of diamond in carats", y="price of diamond in dollars", title="Diamond Data")
+pdf(file="output.pdf")
+ggplot(diamonds, aes(clarity)) + facet_grid(.~cut) + geom_bar(position="dodge")
+ggplot(diamonds, aes(x=carat,y=price)) + xlim(0,3) + geom_point(colour="steelblue", pch=3) +
+labs(x="weight of diamond in carats", y="price of diamond in dollars", title="Diamond Data")
+dev.off()
+jpeg(file="output.jpg", width = 800, height = 600, quality=100)
+ggplot(diamonds, aes(depth))+geom_histogram(aes(fill = ..count..))
+dev.off()
+ggplot(diamonds, aes(depth))+geom_histogram()
+ggplot(diamonds, aes(depth))+geom_histogram(aes(fill = ..count..))
+ggplot(diamonds, aes(depth))+geom_histogram(aes(fill = ..count..))
+ggplot(diamonds, aes(clarity)) +facet_grid(.~cut) + geom_bar(position="dodge", fill="purple")+theme(panel.background = element_rect(fill='pink', colour='green'))
+ggplot(diamonds, aes(clarity)) +facet_grid(.~cut) + geom_bar(position="dodge")+theme(panel.background = element_rect(fill='white', colour='black'))
+ggplot(diamonds, aes(x=clarity, fill=clarity)) +facet_grid(.~cut) + geom_bar(position="dodge")+ scale_fill_brewer(palette="Reds")
+scale_color_manual(values = c("yellow","orange","pink","red","purple"))
+mydata <- ggplot(diamonds, aes(clarity)) +facet_grid(.~cut)
+mytheme <- theme(panel.background = element_rect(fill='lightblue', colour='darkgrey'))
+mychart <- geom_bar(position="dodge", fill="thistle", color="black")
+mydata+mytheme+mychart
+ggplot(diamonds, aes(x=carat, y=price)) + geom_point() + geom_smooth(method=lm)
+ggplot(diamonds, aes(x=carat, y=price)) + geom_point() + stat_smooth()
+ggplot(mtcars, aes(x=mpg, y=disp)) + geom_point() + stat_smooth()
+ggplot(diamonds, aes(x=cut, y=price)) + geom_violin()
+ggplot(diamonds, aes(x=clarity, y=price)) + geom_violin()
+ggplot(diamonds, aes(x=color, y=price)) + geom_violin()
+ggplot(diamonds, aes(x=color, y=price)) + geom_boxplot()
+ggplot(diamonds, aes(x=color, y=price)) + geom_boxplot() + coord_flip()
+ggplot(diamonds, aes(x=carat)) + geom_density()
+ggplot(diamonds, aes(x=carat, fill=clarity, color=clarity)) + geom_density()
+ggplot(diamonds, aes(x=carat, fill=clarity, color=clarity)) + geom_density(alpha=0.3, aes(y=..scaled..))
+ggplot(diamonds, aes(x=carat, y=clarity)) + geom_density_ridges()
+ggplot(diamonds, aes(x=price)) + geom_density()
+ggplot(diamonds, aes(x=price, y=clarity)) + geom_density_ridges()
+ggplot(diamonds, aes(x=carat, y=price)) + geom_hex()
+ggplot(diamonds, aes(x=carat, y=price)) + geom_point() + geom_smooth()
+ggplot(diamonds, aes(x=carat, y=price)) + geom_point() + geom_smooth() + scale_y_continuous(trans="log") + scale_x_continuous(trans="log")
+ggplot(diamonds, aes(x=carat, y=price, color="purple")) + geom_point() + geom_smooth() + scale_y_continuous(trans="log") + scale_x_continuous(trans="log")
+ggplot(diamonds, aes(x=carat, y=price)) + geom_point(color="purple") + geom_smooth() + scale_y_continuous(trans="log") + scale_x_continuous(trans="log")
+ggplot(diamonds, aes(x=carat, y=price)) + geom_point() + geom_smooth(color="purple") + scale_y_continuous(trans="log") + scale_x_continuous(trans="log")
+ggplot(diamonds, aes(x=carat, y=price)) + geom_point(aes(color=cut)) + geom_smooth() + scale_y_continuous(trans="log") + scale_x_continuous(trans="log")
+ggplot(diamonds, aes(x=carat, y=price, color=cut)) + geom_point() + geom_smooth() + scale_y_continuous(trans="log") + scale_x_continuous(trans="log")
+ggplot(diamonds, aes(x=carat, y=price, color=cut)) + geom_point() + geom_smooth() + scale_y_continuous(trans="log") + scale_x_continuous(trans="log")
+lastplot <- ggplot(diamonds, aes(x=carat,y=price)) + xlim(0,3) + geom_point(aes(color=cut)) + stat_smooth() +
+labs(x="weight of diamond in carats", y="price of diamond in dollars", title="Diamond Data")
+lastplot + theme_bw()
+lastplot + theme_cowplot()
+lastplot + theme_dark()
+lastplot + theme_economist()
+lastplot + theme_fivethirtyeight()
+lastplot + theme_tufte()
+lastplot + theme_wsj()
+lastplot + theme_cowplot() + scale_color_brewer(palette = "Dark2")
+lastplot + theme_tufte() + scale_color_brewer(palette = "Set3")
+lastdensity <-ggplot(diamonds, aes(x=carat, fill=clarity, color=clarity)) + geom_density(alpha=0.3, aes(y=..scaled..))
+lastdensity + theme_cowplot() + scale_fill_brewer(palette = "Dark2") + scale_color_brewer(palette = "Dark2")
+lastdensity + theme_tufte() + scale_fill_brewer(palette = "Set3") + scale_color_brewer(palette = "Set3")
+mtcars %>%
+ggvis(~wt, ~mpg) %>%
+layer_smooths(span = input_slider(0.5, 1, value = 1)) %>%
+layer_points(size := input_slider(100, 1000, value = 100))
+mtcars %>% ggvis(x = ~wt) %>%
+layer_densities(
+adjust = input_slider(.1, 2, value = 1, step = .1, label = "Bandwidth adjustment"),
+kernel = input_select(
+c("Gaussian" = "gaussian",
+"Epanechnikov" = "epanechnikov",
+"Rectangular" = "rectangular",
+"Triangular" = "triangular",
+"Biweight" = "biweight",
+"Cosine" = "cosine",
+"Optcosine" = "optcosine"),
+label = "Kernel")
+)
+ggplot(gapminder, aes(gdpPercap, lifeExp, size = pop, colour = country)) +
+geom_point(alpha = 0.7, show.legend = FALSE) +
+scale_colour_manual(values = country_colors) +
+scale_size(range = c(2, 12)) +
+scale_x_log10() +
+facet_wrap(~continent) +
+# Here comes the gganimate specific bits
+labs(title = 'Year: {frame_time}', x = 'GDP per capita', y = 'life expectancy') +
+transition_time(year) +
+ease_aes('linear')
+if(Sys.getenv("RSTUDIO") == "1" & # check if running in RStudio
++    .Platform$OS.type == "unix") quartz() else X11()
+library(tourr)
+animate_xy(flea[, 1:3])
+x=((-30):30)/10
+plot(x,dnorm(x),type='l',col=2,lwd=3)
+abline(h=0)
+pnorm(0.5)-pnorm(-.5)
+qnorm(.75)
+n=100
+x=rnorm(n)
+y=rnorm(n)
+plot(x,y,pch=".",col=2)
+n=20000
+ro=0.999
+sigma=cbind(c(1,ro),c(ro,1))
+library(MASS)
+x = mvrnorm(n,mu=c(0,0),Sigma=sigma)
+plot(x,pch=".",col=2)
+n=300000
+x = rt(n,df=5)
+y = rt(n, df=5)
+plot(x,y,pch='.',col=2)
+savehistory("~/Documents/Rutgers/Spring 2020/Stat 467/Assignment2.Rhistory")
